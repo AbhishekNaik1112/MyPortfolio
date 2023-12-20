@@ -16,7 +16,7 @@ const Home = () => {
             expanding my skills by learning React.JS and Tailwind CSS.
           </p>
           <div className="flex justify-center items-center">
-            <button className="bg-red-900 text-white items-center flex py-6 px-3 w-fit gap-1 my-2 rounded-md shadow-lg hover:bg-red-700 scale-105 duration-300 ">
+            <button className="bg-red-900 text-white items-center flex py-6 px-3 w-fit gap-1 my-2 rounded-md shadow-2xl hover:bg-red-700 scale-105 duration-300">
               Portfolio
               <span>
                 <LuArrowRightToLine />
