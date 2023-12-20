@@ -12,7 +12,7 @@ const Home = () => {
           <h2 className="text-white text-5xl sm:text-6xl font-bold text-center">
             Hi, My name is Abhishek Naik.
           </h2>
-          <h2 className="text-white text-3xl sm:text-5xl font-bold text-center mt-1 py-1">
+          <h2 className="text-white text-xl sm:text-5xl font-bold text-center mt-1 py-1">
             Coder,Web Developer,Video Editor,Student
           </h2>
           <h2 className="text-white text-3xl sm:text-5xl font-bold text-center mt-1 py-1">
