@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         signature:["Great Vibes"],
+        signature1:["Kalnia"],
       },
     },
   },
