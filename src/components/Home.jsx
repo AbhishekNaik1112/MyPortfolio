@@ -1,7 +1,23 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import Typed from "typed.js";
-import { useEffect, useRef } from "react";
+
 const Home = () => {
+  const el = useRef(null);
+  useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["Coder","Web Developer","Video Editor","Student"],
+      startDelay: 100,
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 100,
+      loop: true,
+      showCursor: true,
+      cursorChar: "|",
+    });
+    return () => {
+      typed.destroy();
+    };
+  }, []);
   return (
     <div
       name="home"
@@ -12,11 +28,9 @@ const Home = () => {
           <h2 className="text-white text-5xl sm:text-6xl font-bold text-center">
             Hi, My name is Abhishek Naik.
           </h2>
-          <h2 className="text-white text-xl sm:text-5xl font-bold text-center mt-1 py-1">
-            Coder,Web Developer,Video Editor,Student
-          </h2>
-          <h2 className="text-white text-3xl sm:text-5xl font-bold text-center mt-1 py-1">
-            based in Karnataka,India
+          <h2 className="text-white text-4xl sm:text-5xl font-bold text-center mt-1 py-1">
+            {/* "Coder","Web Developer","Video Editor","Student" */}
+            <span ref={el}></span>{" "}
           </h2>
         </div>
       </div>
