@@ -15,20 +15,21 @@ const About = () => {
         <p className="text-lg">
           I specialize in a dynamic blend of technical and creative skills,
           making me a versatile professional in the digital world. My primary
-          languages include <mark className="bg-gray-600 underline text-black">C++</mark>{" "}
+          languages include{" "}
+          <mark className="bg-gray-600 underline text-black">C++</mark>{" "}
           <mark className="bg-gray-600 underline text-black">HTML5</mark>{" "}
           <mark className="bg-gray-600 underline text-black">CSS3</mark>{" "}
           <mark className="bg-gray-600 underline text-black">Tailwind CSS</mark>{" "}
           <mark className="bg-gray-600 underline text-black">Javascript</mark>{" "}
-          <mark className="bg-gray-600 underline text-black">React.JS</mark>{" "}providing a
-          strong foundation for web development and software engineering. On the
-          creative front, I possess proficiency in graphic design and video
-          editing using tools like{" "}
+          <mark className="bg-gray-600 underline text-black">React.JS</mark>{" "}
+          providing a strong foundation for web development and software
+          engineering. On the creative front, I possess proficiency in graphic
+          design and video editing using tools like{" "}
           <mark className="bg-gray-600 underline text-black">Photoshop</mark>{" "}
           <mark className="bg-gray-600 underline text-black">Premiere Pro</mark>{" "}
           <mark className="bg-gray-600 underline text-black">Illustrator</mark>{" "}
-          <mark className="bg-gray-600 underline text-black">Filmora Pro</mark>. This
-          allows me to transform ideas into visually stunning and engaging
+          <mark className="bg-gray-600 underline text-black">Filmora Pro</mark>.
+          This allows me to transform ideas into visually stunning and engaging
           content, whether it's for websites, marketing materials, or multimedia
           presentations.
         </p>

@@ -66,7 +66,7 @@ const MyWork = () => {
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-5 px-12 sm:px-0">
           {works.map(({ id, src, repolink, demolink }) => (
-            <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
+            <div key={id} className="shadow-md shadow-gray-600 rounded-lg ">
               <img
                 src={src}
                 alt=""

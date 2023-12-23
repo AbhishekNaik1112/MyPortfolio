@@ -29,16 +29,15 @@ const NavBar = () => {
 
   return (
     <div className="relative">
-      <div className="blur-md absolute inset-1 h-20 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-gray-400 via-gray-600 to-gray-900 background-animate"></div>
+      <div className="blur-md  inset-1 h-20 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-red-600 via-black to-red-600 background-animate fixed"></div>
 
       <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black fixed background-animate">
-      
         <div>
           <h1 className="font-signature text-5xl ml-2 cursor-pointer">
             Abhishek
           </h1>
         </div>
-        
+
         <ul className="hidden md:flex">
           {links.map(({ id, link }) => (
             <li
@@ -71,6 +70,6 @@ const NavBar = () => {
       </div>
     </div>
   );
-}
+};
 
 export default NavBar;
