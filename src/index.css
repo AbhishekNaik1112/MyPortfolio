@@ -14,7 +14,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 /* Kalnia Font */
-@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100;200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kalnia:wght@100;200;300;400;500;600;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -25,3 +25,57 @@
     font-family: "Raleway", sans-serif;
   }
 }
+
+.background-animate {
+  background-size: 400%;
+  -webkit-animation: infiniteHorizontalAnimation 10s linear infinite;
+  -moz-animation: infiniteHorizontalAnimation 10s linear infinite;
+  animation: infiniteHorizontalAnimation 10s linear infinite;
+}
+
+@keyframes infiniteHorizontalAnimation {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  2% {
+    background-position: 8% 50%;
+  }
+  5% {
+    background-position: 20% 50%;
+  }
+  10% {
+    background-position: 40% 50%;
+  }
+  20% {
+    background-position: 80% 50%;
+  }
+  30% {
+    background-position: 120% 50%;
+  }
+  40% {
+    background-position: 160% 50%;
+  }
+  50% {
+    background-position: 200% 50%;
+  }
+  60% {
+    background-position: 240% 50%;
+  }
+  70% {
+    background-position: 280% 50%;
+  }
+  80% {
+    background-position: 320% 50%;
+  }
+  90% {
+    background-position: 360% 50%;
+  }
+  95% {
+    background-position: 380% 50%;
+  }
+  100% {
+    background-position: 400% 50%;
+  }
+}
+
+

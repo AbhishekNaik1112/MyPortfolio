@@ -54,7 +54,7 @@ const MyWork = () => {
   return (
     <div
       name="mywork"
-      className="bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black w-full text-white md:h-screen"
+      className="bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black w-full text-white md:h-screen background-animate"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className=" pb-6">
@@ -75,13 +75,13 @@ const MyWork = () => {
               <div className="flex items-center justify-center">
                 <button
                   onClick={() => openLink(demolink)}
-                  className="w-1/4 px-6  m-4  hover:text-gray-500 scale-105 duration-300"
+                  className="w-1/4 px-6  m-4  hover:text-red-600 scale-105 duration-300"
                 >
                   Demo
                 </button>
                 <button
                   onClick={() => openLink(repolink)}
-                  className="w-1/4 px-6  m-4  hover:text-gray-500 scale-105 duration-300"
+                  className="w-1/4 px-6  m-4  hover:text-red-600 scale-105 duration-300"
                 >
                   Code
                 </button>

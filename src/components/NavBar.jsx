@@ -28,7 +28,7 @@ const NavBar = () => {
   ];
 
   return (
-    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black fixed">
+    <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-900 via--900 to-black fixed ">
       <div>
         <h1 className="font-signature text-5xl ml-2 cursor-pointer">
           Abhishek
@@ -38,7 +38,7 @@ const NavBar = () => {
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer capitalize font-medium text-white hover:text-gray-500 scale-105 duration-300"
+            className="px-4 cursor-pointer capitalize font-medium text-white hover:text-red-600 scale-105 duration-300"
           >
             {link}
           </li>
@@ -52,11 +52,11 @@ const NavBar = () => {
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black text-white">
+        <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black text-white background-animate">
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className=" text-2xl px-4 cursor-pointer capitalize py-6 font-medium text-white hover:text-gray-500 scale-105 duration-300"
+              className=" text-2xl px-4 cursor-pointer capitalize py-6 font-medium text-white hover:text-red-600 scale-105 duration-300"
             >
               {link}
             </li>
