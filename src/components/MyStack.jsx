@@ -12,10 +12,10 @@ import Ps from "../assets/ps.png"
 
 const MyStack = () => {
   return (
-    <div>
+    <div name="my stack">
         <div>
             <div>
-                <p></p>
+                <p>Experience</p>
             </div>
         </div>
     </div>
