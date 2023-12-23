@@ -5,7 +5,7 @@ const Home = () => {
   const el = useRef(null);
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ["Coder", "Web Developer", "Video Editor", "Student"],
+      strings: ["Coder", "Web Developer", "Content Editor", "Student"],
       startDelay: 100,
       typeSpeed: 100,
       backSpeed: 100,
