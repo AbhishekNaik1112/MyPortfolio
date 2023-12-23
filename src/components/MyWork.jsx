@@ -10,28 +10,46 @@ const MyWork = () => {
     {
       id: 1,
       src: FoodWeb,
+      repolink: "https://github.com/AbhishekNaik1112/Food-Recipe-Website",
+      demolink: "#",
     },
     {
       id: 2,
       src: SMcpp,
+      repolink:
+        "https://github.com/AbhishekNaik1112/Student-Management-System-CPP",
+      demolink: "#",
     },
     {
       id: 3,
       src: RpsWeb,
+      repolink:
+        "https://github.com/AbhishekNaik1112/Project_Rock_Paper_Scissors_Functional",
+      demolink: "#",
     },
     {
       id: 4,
       src: Rpscpp,
+      repolink: "https://github.com/AbhishekNaik1112/Rock-Paper-Scissors-CPP",
+      demolink: "#",
     },
     {
       id: 5,
       src: SnakeGame,
+      repolink: "https://github.com/AbhishekNaik1112/Project_Snake_Game",
+      demolink: "#",
     },
     {
       id: 6,
       src: Bird,
+      repolink: "https://github.com/AbhishekNaik1112/Bird-Shooter-Game",
+      demolink: "#",
     },
   ];
+
+  const openLink = (link) => {
+    window.open(link, "_blank");
+  };
 
   return (
     <div
@@ -47,7 +65,7 @@ const MyWork = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {works.map(({ id, src }) => (
+          {works.map(({ id, src, repolink, demolink }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
@@ -55,10 +73,16 @@ const MyWork = () => {
                 className="rounded-md duration-300 hover:scale-105"
               />
               <div className="flex items-center justify-center">
-                <button className="w-1/2 px-6  m-4  hover:text-gray-500 scale-105 duration-300">
+                <button
+                  onClick={() => openLink(demolink)}
+                  className="w-1/2 px-6  m-4  hover:text-gray-500 scale-105 duration-300"
+                >
                   Demo
                 </button>
-                <button className="w-1/2 px-6  m-4  hover:text-gray-500 scale-105 duration-300">
+                <button
+                  onClick={() => openLink(repolink)}
+                  className="w-1/2 px-6  m-4  hover:text-gray-500 scale-105 duration-300"
+                >
                   Code
                 </button>
               </div>
