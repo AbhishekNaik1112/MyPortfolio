@@ -75,13 +75,13 @@ const MyWork = () => {
               <div className="flex items-center justify-center">
                 <button
                   onClick={() => openLink(demolink)}
-                  className="w-1/4 px-6  m-4  hover:text-red-600 scale-105 duration-300"
+                  className="w-1/2 px-6  m-4  hover:text-red-600 scale-105 duration-300"
                 >
                   Demo
                 </button>
                 <button
                   onClick={() => openLink(repolink)}
-                  className="w-1/4 px-6  m-4  hover:text-red-600 scale-105 duration-300"
+                  className="w-1/2 px-6  m-4  hover:text-red-600 scale-105 duration-300"
                 >
                   Code
                 </button>
