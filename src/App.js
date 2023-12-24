@@ -1,4 +1,5 @@
 import About from "./components/About";
+import Contact from "./components/Contact";
 import Home from "./components/Home";
 import MyStack from "./components/MyStack";
 import MyWork from "./components/MyWork";
@@ -13,6 +14,7 @@ function App() {
       <About />
       <MyWork />
       <MyStack />
+      <Contact />
       <Socials />
     </div>
   );
