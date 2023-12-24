@@ -49,10 +49,10 @@ const MyWork = () => {
     <div
       name="my work"
       className="bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black background-animate w-full text-white md:h-screen"
-    >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center items-center w-full h-full">
-        <div className="pb-8">
-          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+      >
+        <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+          <div className="pb-8 mt-8">
+            <p className="text-4xl font-bold inline border-b-4 border-gray-500">
            My Work
           </p>
         </div>
@@ -82,3 +82,5 @@ const MyWork = () => {
 };
 
 export default MyWork;
+
+

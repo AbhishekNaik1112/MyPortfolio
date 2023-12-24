@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { SiLeetcode } from "react-icons/si";
 
 const Socials = () => {
+  const [isScrolling, setIsScrolling] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      setIsScrolling(scrollY > 250);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   const links = [
     {
       id: 1,
@@ -55,14 +70,19 @@ const Socials = () => {
       download: true,
     },
   ];
+
   return (
-    <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
+    <div
+      className={`lg:flex flex-col top-[35%] left-0 fixed ${
+        isScrolling ? "hidden" : "block"
+      }`}
+    >
       <ul>
         {links.map(({ id, social, href, style, download }) => (
           <li
             key={id}
             className={
-              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-5px] hover:rounded-md duration-300 bg-gray-800" +
+              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-5px] hover:rounded-md duration-300 bg-gray-900 " +
               " " +
               style
             }
