@@ -73,16 +73,16 @@ const Socials = () => {
 
   return (
     <div
-      className={`lg:flex flex-col top-[35%] left-0 fixed ${
-        isScrolling ? "hidden" : "block"
-      }`}
+      className= "hidden lg:flex flex-col top-[35%] left-0 fixed "
+        
+      
     >
       <ul>
         {links.map(({ id, social, href, style, download }) => (
           <li
             key={id}
             className={
-              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-5px] hover:rounded-md duration-300 bg-gray-900 " +
+              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-5px] hover:rounded-md duration-300 bg-black " +
               " " +
               style
             }

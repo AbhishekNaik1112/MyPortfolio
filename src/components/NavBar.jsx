@@ -30,11 +30,11 @@ const NavBar = () => {
 
   return (
     <div className="relative">
-      <div className="blur-md  inset-1 h-20 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-red-600 via-black to-red-600 background-animate fixed"></div>
+      <div className="blur-md  inset-1 h-20 fixed"></div>
 
-      <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black fixed background-animate">
+      <div className="flex justify-between items-center w-full h-20 px-4 fixed text-white bg-black ">
         <div>
-          <h1 className="font-signature text-5xl ml-2 cursor-pointer">
+          <h1 className="font-signature text-5xl ml-2">
             Abhishek
           </h1>
         </div>
@@ -59,7 +59,7 @@ const NavBar = () => {
         </div>
 
         {nav && (
-          <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black text-white background-animate">
+          <ul className="flex flex-col justify-center items-center  top-0 left-0 w-full h-screen bg-black fixed">
             {links.map(({ id, link }) => (
               <li
                 key={id}
