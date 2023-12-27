@@ -4,7 +4,7 @@ import Bird from "../assets/birdshooter.png";
 import SMcpp from "../assets/Studentmanagec++.png";
 import FoodWeb from "../assets/foodweb.png";
 import SnakeGame from "../assets/snake.png";
-import React, { useRef, useEffect, useState } from "react";
+import React, {  useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
@@ -625,7 +625,7 @@ const MyWorkk = () => {
   return (
     <div name="my work" className="w-full text-white md:h-screen py-6">
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-8 mt-8">
+        <div className="pb-8 mt-24">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             My Work
           </p>

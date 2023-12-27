@@ -4,7 +4,7 @@ const VerCon = () => {
   return (
     <div>
         <div>
-            <h1 className="text-center mt-5 text-white text-xs">Version 1</h1>
+            <h1 className="text-center mt-20 text-white text-xs">Version 2</h1>
         </div>
     </div>
   )

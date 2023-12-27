@@ -8,7 +8,7 @@ import Ai from "../assets/ai.png";
 import Pp from "../assets/pp.png";
 import ParticleJS from "../assets/pjs.png";
 import Ps from "../assets/ps.png";
-import React, { useRef, useEffect, useState } from "react";
+import React, {  useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 
