@@ -4,7 +4,7 @@ Welcome to my personal portfolio! This project was created using React.js, Parti
 
 ## Table of Contents
 
-- [Deployed Link](https://abhishekkk-portfolio.netlify.app/
+- [Deployed Link](https://abhishekkk-portfolio.netlify.app/)
 
 ## Features
 
