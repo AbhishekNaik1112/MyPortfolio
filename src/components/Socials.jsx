@@ -29,7 +29,7 @@ const Socials = () => {
         </>
       ),
       href: "https://github.com/AbhishekNaik1112",
-      style: "rounded-tr-md",
+      style: "rounded-tr-md bg-gray-700",
     },
     {
       id: 2,
@@ -39,6 +39,7 @@ const Socials = () => {
         </>
       ),
       href: "https://www.linkedin.com/in/1211abhisheknaik/",
+      style: "bg-blue-500",
     },
     {
       id: 3,
@@ -48,6 +49,7 @@ const Socials = () => {
         </>
       ),
       href: "#",
+      style: "bg-orange-500",
     },
     {
       id: 4,
@@ -57,6 +59,7 @@ const Socials = () => {
         </>
       ),
       href: "https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=abhisheknaik1112@gmail.com",
+      style: "bg-gray-400",
     },
     {
       id: 5,
@@ -66,25 +69,23 @@ const Socials = () => {
         </>
       ),
       href: "#",
-      style: "rounded-br-md",
+      style: "rounded-br-md bg-red-500",
       download: true,
     },
   ];
 
   return (
-    <div
-      className= "hidden lg:flex flex-col top-[35%] left-0 fixed "
-        
-      
-    >
+    <div className="hidden lg:flex flex-col top-[35%] left-0 fixed ">
       <ul>
-        {links.map(({ id, social, href, style, download }) => (
+        {links.map(({ id, social, href, style, download, background }) => (
           <li
             key={id}
             className={
               "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-5px] hover:rounded-md duration-300 bg-black " +
               " " +
-              style
+              style +
+              " " +
+              background
             }
           >
             <a
