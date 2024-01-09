@@ -17,7 +17,7 @@ Welcome to my personal portfolio! This project was created using React.js, Parti
 
 ## Installation
 
-1. If you want to make changes to this and add something of your own feel free to clone and use it:
+1. If you want to use to this and add make something of your own feel free to clone and use it:
 
 ```bash
 git clone https://github.com/AbhishekNaik1112/MyPortfolio.git
